@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>2 laba</title>
+    <link rel="stylesheet" href="main.css">
+    <style >
+      .tabs{
+        position :relative;
+        float: left;
+      }
+
+      .tab, .tab-title{
+        display: inline-block;
+      }
+
+      .tab input[type="radio"]{display: none;}
+      .tab-title {
+        padding: 5px 10px;
+      }
+
+      .tab-title:hover{
+        background: black;
+        color: white;
+      }
+
+      .tab-title::after{
+        background: black;
+        color: white;
+      }
+
+      .tab-content{
+        position: absolute;
+        padding: 10px;
+        left : 0;
+        display: none;
+      }
+
+      .tab :checked + .tab-title{
+        position: relative;
+        z-index: 1;
+      }
+
+      .tab :checked + .tab-title + .tab-content{
+        display : block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div style = " position: absolute; top: 50px; left: 300px; height: 100px; width: 100px; background-color: red;">
+    </div>
+    <div class="position">
+    </div>
+    <div class="tabs">
+      <div class="tab">
+      <input type="radio" id="tab1" name="tab-group" checked>
+      <label for="tab1" class = "tab-title">Вкладка 1</label>
+      <section class="tab-content">
+      <b>Вкладка 1</b>
+      <p>Lorem ipsum dolor labore et dolore magna aliquaion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p></section>
+      </div>
+      <div class="tab">
+      <input type="radio" id="tab2" name="tab-group">
+      <label for="tab2" class = "tab-title">Вкладка 2</label>
+      <section class="tab-content">
+      <b>Вкладка 2</b>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicinglabore et nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p></section>
+      </div>
+      <div class="tab">
+      <input type="radio" id="tab3" name="tab-group">
+      <label for="tab3" class = "tab-title">Вкладка 3</label>
+      <section class="tab-content">
+      <b>Вкладка 3</b>
+      <p>Lorem ipsum dolor sit amet, bore et doxemodo conse in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p></section>
+      </div>
+
+      </div>
+  </body>
+</html>
